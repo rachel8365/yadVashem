@@ -1,0 +1,19 @@
+<mat-list>
+    <mat-list-item class="cards" *ngFor="let event of filteredEvents; let i = index"
+        (click)="chooseTime(event); selectItem(i)" [class.selected-item]="selectedItemIndex === i">
+
+        <div>{{ event.startTime }}</div>
+        <div *ngIf="event.availablePlaces === 0 && !event.isClosed" mat-line>אזלו</div>
+        <div *ngIf="event.availablePlaces > 0 && !event.isClosed" mat-line> {{ event.availablePlaces }}
+            כרטיסים
+        </div>
+        <div *ngIf="event.isClosed" mat-line>סגור</div>
+    </mat-list-item>
+
+</mat-list>
+
+<div class="warpBtn">
+    <button class="btn">חזרה<mat-icon>keyboard_arrow_right</mat-icon> </button>
+    <button class="btn" (click)="navigateToApprovalPage()"><mat-icon>keyboard_arrow_left</mat-icon>המשך</button>
+
+</div>

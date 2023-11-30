@@ -1,0 +1,30 @@
+ :host ::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+     background-color: #0064bb;
+     color: #fff !important;
+
+ }
+
+ :host ::ng-deep .mat-mdc-tab .mdc-tab__text-label {
+     font-size: x-large;
+     color: #0064bb;
+     font-family: system-ui;
+     font-weight: 500;
+ }
+
+
+ :host ::ng-deep.mat-mdc-tab.mdc-tab {
+     flex-grow: 0;
+     background-color: white;
+     margin-right: 1rem;
+     border-radius: 5px;
+ }
+
+ :host::ng-deep .mat-mdc-tab.mdc-tab--active {
+     background-color: #0064bb;
+ }
+
+
+ :host ::ng-deep.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+     width: 20rem;
+     height: 3.5rem;
+ }

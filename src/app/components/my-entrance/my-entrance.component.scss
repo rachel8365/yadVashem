@@ -1,0 +1,81 @@
+:host::ng-deep .mat-mdc-list-item:not(.mat-mdc-list-item-interactive),
+.mat-mdc-list-option:not(.mat-mdc-list-item-interactive) {
+    cursor: default;
+    height: 5rem;
+    width: -6px;
+    border: 1px solid rgba(243, 239, 239, 0.1);
+    border-radius: 100px;
+    width: 7rem;
+    /* width: max-content; */
+    text-align: center;
+    font-size: medium;
+    font-family: system-ui;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #fff !important;
+}
+
+:host ::ng-deep .mat-mdc-list-base {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    flex-wrap: wrap;
+    height: 30vh;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.warpBtn {
+    text-align: center;
+}
+
+:host::ng-deep .btn:hover {
+    background-color: #fff;
+    color: #005fb1;
+    cursor: pointer !important;
+}
+
+.btn {
+    color: white;
+    background-color: #005fb1;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    width: 200px;
+    height: 40px;
+    margin-right: 1rem;
+    margin-left: auto;
+    font-family: system-ui !important;
+
+
+
+}
+
+
+:host::ng-deep .mat-mdc-list-item:hover {
+    background-color: #005fb1;
+    cursor: pointer !important;
+}
+
+
+
+:host::ng-deep .cards {
+    color: #fff !important;
+
+    div {
+        color: #fff !important;
+    }
+}
+
+.selected-item {
+    background-color: #0064bb;
+    color: #fff;
+
+}

@@ -1,0 +1,22 @@
+<form [formGroup]="formData" class="form-container">
+    <div class="namOfVisitorse">
+        <h1>כניסה למוזיאון</h1>
+        <h2>נא למלא את הפרטים הדרושים ולחץ המשך.</h2>
+        <h3>הכניסה למוזיאון אינה כרוכה בתשלום (כניסה בלבד ללא הדרכה)</h3>
+
+        <h2>פרטי הסיור</h2>
+        <label>מספר מבקרים</label>
+        <mat-form-field class="example-ripple-form-field" appearance="fill">
+            <input matInput formControlName="NumOfVisitors" type="number" min="0" max="80"
+                (keyup.enter)="calculateAvailablePlaces()">
+        </mat-form-field>
+
+        <div>
+
+            <div class="date"><label class="labelDate">תאריך</label> {{ this.formData.value.TheDateToday | date:
+                'dd.MM.yyyy' }} | 930 :
+                כרטיסים שנותרו </div>
+        </div>
+        <app-times-of-cards [NumOfVisitors]="this.formData.value.NumOfVisitors"></app-times-of-cards>
+    </div>
+</form>

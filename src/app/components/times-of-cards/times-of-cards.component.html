@@ -1,0 +1,22 @@
+<mat-tab-group animationDuration="0ms" (selectedTabChange)="changeTime($event)" class="categories custom-tab-group">
+    <div class="categories">
+        <mat-tab class="categories" label="בוקר">
+            <div *ngIf="index==0 &&showHours">
+                <app-my-entrance [startTime]="startTime" [endTime]="endTime" [entranceList]="entrancesData"
+                    [NumOfVisitors]="NumOfVisitors"></app-my-entrance>
+            </div>
+        </mat-tab>
+        <mat-tab label="צהריים">
+            <div *ngIf="index==1&&showHours">
+                <app-my-entrance [startTime]="startTime" [endTime]="endTime" [entranceList]="entrancesData"
+                    [NumOfVisitors]="NumOfVisitors"></app-my-entrance>
+            </div>
+        </mat-tab>
+        <mat-tab label="אחר הצהריים">
+            <div *ngIf="index==2&&showHours">
+                <app-my-entrance [startTime]="startTime" [endTime]="endTime" [entranceList]="entrancesData"
+                    [NumOfVisitors]="NumOfVisitors"></app-my-entrance>
+            </div>
+        </mat-tab>
+    </div>
+</mat-tab-group>

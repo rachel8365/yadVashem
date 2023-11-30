@@ -1,0 +1,33 @@
+:host::ng-deep .mat-toolbar {
+    background-color: transparent !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-icons,
+.right-icons {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.center-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+
+}
+
+.center-logo img {
+    border-radius: 15px;
+    margin-top: 2rem;
+    width: 110px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
